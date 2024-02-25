@@ -98,7 +98,7 @@ body {
   gap: 20px;
   border-radius: 10px;
 }
-
+/*Inceput codul lui cristi */
 .collection{
   display: flex;
   justify-content: center;
@@ -127,3 +127,4 @@ body {
   font-weight: 600;
   color: var(--custom-color);
 }
+/* Sfarsit codul lui cristi */
