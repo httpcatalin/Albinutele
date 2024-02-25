@@ -24,7 +24,7 @@
       <div class="navbar">
         <div class="left">
           <div class="imag">
-            <img src="/assets/drone_navbar.svg" alt="" />
+            <a href="#"><img src="/assets/drone_navbar.svg" alt="" /></a>
           </div>
         </div>
         <div class="middle">
@@ -32,10 +32,16 @@
             <a href="#">Home</a>
           </div>
           <div class="link">
-            <a href="#"
+            <a href="#" onclick="toggleBurger()"
               >Types Of Drones <img src="/assets/triunghi.svg" alt=""
             /></a>
+            <ul class="menu-burger">
+              <li><a href="#">-> Bune</a></li>
+              <li><a href="#">-> Si mai bune</a></li>
+              <li><a href="#">-> In genere top</a></li>
+            </ul>
           </div>
+
           <div class="link">
             <a href="#">Support</a>
           </div>
@@ -43,8 +49,26 @@
             <a href="#"> <img src="/assets/search_icon.svg" alt="" /></a>
           </div>
         </div>
+
         <div class="right">
-          <a href="#"> <img src="/assets/menu_icon.svg" alt="" /></a>
+          <a href="#" onclick="toggleMenu()">
+            <img src="/assets/menu_icon.svg" alt=""
+          /></a>
+        </div>
+        <div class="menu">
+          <div class="close-sign">
+            <a href="#" onclick="toggleMenu()"
+              ><img src="/assets/close_icon.svg" alt=""
+            /></a>
+          </div>
+          <div class="inner-menu">
+            <div class="link-menu">
+              <a href="#">Home</a>
+            </div>
+            <div class="link-menu">
+              <a href="#">Support</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
