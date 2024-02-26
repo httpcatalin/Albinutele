@@ -94,7 +94,31 @@ body {
   gap: 20px;
   border-radius: 10px;
 }
-
+.title {
+  font-family: Inter;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+.description {
+  font-family: Inter;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.buttons .explore {
+  background: white;
+  color: #ffcd6d;
+}
+.buttons .more {
+  border: 2px solid white;
+}
 /*Inceput codul lui cristi */
 .collection {
   display: flex;
