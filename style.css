@@ -1,15 +1,11 @@
-:root{
-  --custom-color: white;
-}
-
 body {
   background-color: #ffcd6d;
 }
 .main-page {
   margin: 2rem 6rem;
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  flex-direction: column;
 }
 .navbar {
   display: flex;
@@ -98,33 +94,34 @@ body {
   gap: 20px;
   border-radius: 10px;
 }
+
 /*Inceput codul lui cristi */
-.collection{
+.collection {
   display: flex;
   justify-content: center;
-  padding: 15px ;
+  padding: 15px;
 }
-.upperLine{
+.upperLine {
   position: relative;
   bottom: 10px;
   left: 16px;
 }
 
-.ZaCollectionS{
+.ZaCollectionS {
   position: relative;
   top: 7px;
 }
 
-.underLine{
+.underLine {
   position: relative;
   top: 10px;
   right: 16px;
 }
 
-.slider{
+.slider {
   font-family: Inter, sans-serif;
   font-size: 17px;
   font-weight: 600;
-  color: var(--custom-color);
+  color: white;
 }
 /* Sfarsit codul lui cristi */
