@@ -76,6 +76,9 @@ body {
   right: 40px;
   width: 30px;
   height: 30px;
+  background-color: #eec47770;
+  border-radius: 20px;
+  padding: 15px;
 }
 .menu-burger {
   list-style: none;
@@ -95,17 +98,23 @@ body {
   gap: 20px;
   border-radius: 10px;
 }
+.part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title {
   font-family: Inter;
   color: white;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 90px;
+  text-transform: uppercase;
 }
 .description {
   font-family: Inter;
   color: white;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 26px;
 }
 .buttons {
   display: flex;
@@ -113,12 +122,44 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+.right {
+  background: none;
+}
+.part2 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part2 .left img {
+  object-fit: cover;
+  width: 1000px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 240px;
+  align-items: start;
+}
 .buttons .explore {
   background: white;
   color: #ffcd6d;
+  border-radius: 16px;
+  font-family: Inter;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 40px;
 }
 .buttons .more {
   border: 2px solid white;
+  font-family: Inter;
+  color: white;
+  border-radius: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  font-size: 20px;
 }
 .popup {
   display: flex;
