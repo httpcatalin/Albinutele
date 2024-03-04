@@ -2,13 +2,14 @@ body {
   background-color: #ffcd6d;
 }
 .main-page {
-  margin: 2rem 6rem;
   display: flex;
   height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 .navbar {
   display: flex;
+  margin: 2rem 6rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -119,33 +120,80 @@ body {
 .buttons .more {
   border: 2px solid white;
 }
-/*Inceput codul lui cristi */
-.collection {
+.popup {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+  margin-top: 400px; /* temporar */
+}
+.title-pop {
+  font-family: Inter;
+  color: white;
+  font-weight: 900;
+  font-size: 28px;
+  font-style: italic;
+}
+.left-pop img {
+  position: absolute;
+  top: -150px;
+  right: 200px;
+}
+.description-pop {
+  font-family: Inter;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.text-pop {
+  font-family: Inter;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+}
+.right-pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1.3rem;
+  border-radius: 50px 0 0 50px;
+  background-color: #ffd88b;
+  padding: 3rem 12rem;
+  padding-right: 4rem;
+}
+.button-pop a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cerc-1 {
+  position: absolute;
+  top: 80px;
+}
+.cerc-2 {
+  position: absolute;
+  top: 840px;
+  left: 450px;
+}
+.cerc-3 {
+  position: absolute;
+  top: 640px;
+  left: 570px;
+}
+.cerc-4 {
+  position: absolute;
+  top: 0px;
+  z-index: -7;
+  left: 550px;
+}
+.gif {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  margin-right: 29vh;
 }
-.upperLine {
-  position: relative;
-  bottom: 10px;
-  left: 16px;
+.gif img {
+  height: 120px;
+  width: 90px;
 }
-
-.ZaCollectionS {
-  position: relative;
-  top: 7px;
-}
-
-.underLine {
-  position: relative;
-  top: 10px;
-  right: 16px;
-}
-
-.slider {
-  font-family: Inter, sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: white;
-}
-/* Sfarsit codul lui cristi */
