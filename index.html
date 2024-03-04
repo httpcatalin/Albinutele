@@ -27,66 +27,6 @@
     <title>Albinute zum zum zum</title>
   </head>
   <body>
-    <!-- codul lui catalincik -->
-    <!-- main page -->
-    <div class="main-page">
-      <!-- navbar -->
-      <div class="navbar">
-        <div class="left">
-          <div class="imag">
-            <a href="#"><img src="/assets/drone_navbar.svg" alt="" /></a>
-          </div>
-        </div>
-        <div class="middle">
-          <div class="link">
-            <a href="#">Home</a>
-          </div>
-          <div class="link">
-            <a href="#" onclick="toggleBurger()"
-              >Types Of Drones <img src="/assets/triunghi.svg" alt=""
-            /></a>
-            <ul class="menu-burger">
-              <li><a href="#">-> Bune</a></li>
-              <li><a href="#">-> Si mai bune</a></li>
-              <li><a href="#">-> In genere top</a></li>
-            </ul>
-          </div>
-
-          <div class="link">
-            <a href="#">Support</a>
-          </div>
-          <div class="link">
-            <a href="#"> <img src="/assets/search_icon.svg" alt="" /></a>
-          </div>
-        </div>
-
-        <div class="right">
-          <a href="#" onclick="toggleMenu()">
-            <img src="/assets/menu_icon.svg" alt=""
-          /></a>
-        </div>
-        <div class="menu">
-          <div class="close-sign">
-            <a href="#" onclick="toggleMenu()"
-              ><img src="/assets/close_icon.svg" alt=""
-            /></a>
-          </div>
-          <div class="inner-menu">
-            <div class="link-menu">
-              <a href="#">Home</a>
-            </div>
-            <div class="link-menu">
-              <a href="#">Support</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="part2">
-        <div class="left">
-          <img src="/assets/albina_mare.svg" alt="" />
-        </div>
-      </div>
-    </div>
     <!-- codul lui Cristi -->
     <!-- SLIDER -->
     <div class="slider">
@@ -100,8 +40,10 @@
           <i class="fa-solid fa-window-minimize"></i>
         </div>
       </div>
-      <div class="slider-wrapper">
-        <button id="prev-slide" class="slide-button material-symbols-outlined">arrow_back</button>
+      <div class="parentSL">
+        <div class="backgroundSL"></div>
+        <div class="slider-wrapper">
+        <button onclick="prevSlide()" id="prev-slide" class="slide-button material-symbols-outlined">arrow_back</button>
         <div class="image-list">
           <img src="/assets/albina_mare.svg" alt="albina_mare" class="image-item">
           <img src="/assets/albina_mica.svg" alt="2" class="image-item">
@@ -110,8 +52,17 @@
           <img src="/assets/albina_slider3-removebg-.png" alt="" class="image-item">
           <img src="/assets/albina_slider4-removebg-.png" alt="" class="image-item">
           
+          <div class="text-container">
+            <p class="slider-text">Albina_mare.</p>
+            <p class="slider-text">Albina_mica.</p>
+            <p class="slider-text">Albina_sldier1.</p>
+            <p class="slider-text">Albina_sldier2</p>
+            <p class="slider-text">Albina_sldier3</p>
+            <p class="slider-text">Albina_sldier4</p>
+          </div>
         </div>
-        <button id="prev-slide" class="slide-button material-symbols-outlined">arrow_forward</button>
+        <button onclick="nextSlide()" id="next-slide" class="slide-button material-symbols-outlined">arrow_forward</button>
+       </div>
       </div>
     </div>
   </body>

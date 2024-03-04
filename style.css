@@ -124,10 +124,23 @@ body {
   font-weight: 600;
   color: white;
 }
-.image-item{
-  width: 800px;
-  height: 800px;
+
+.backgroundSL{
+  background: #FFFFFF33;
+  width: 1600px;
+  height: 446px;
+  top: 2313px;
+  left: 64px;
+  border-radius: 103px;
 }
 
+.parentSL{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
-/* Sfarsit codul lui cristi */
+.slider-wrapper{
+  position: absolute;
+  
+}
