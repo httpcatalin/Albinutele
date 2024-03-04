@@ -125,6 +125,13 @@ body {
   color: white;
 }
 
+
+.parent{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .backgroundSL{
   background: #FFFFFF33;
   width: 1600px;
@@ -132,15 +139,29 @@ body {
   top: 2313px;
   left: 64px;
   border-radius: 103px;
+  z-index: -1;
 }
 
-.parentSL{
-  position: relative;
-  display: flex;
-  justify-content: center;
+.image-list{
+  width: 50%;
+  float: left;
 }
 
-.slider-wrapper{
+.image-list img{
+  width: 762px;
+  height: 762px;
+}
+
+.text-conteiner{
+  width: 50%;
+  float: right;
+}
+
+#prev-slide{
   position: absolute;
-  
+  left: 160px;
+}
+#next-slide{
+  position: absolute;
+  right: 160px;
 }
