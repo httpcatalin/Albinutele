@@ -2,14 +2,13 @@ body {
   background-color: #ffcd6d;
 }
 .main-page {
+  margin: 2rem 6rem;
   display: flex;
   height: 100vh;
   flex-direction: column;
-  position: relative;
 }
 .navbar {
   display: flex;
-  margin: 2rem 6rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -165,8 +164,9 @@ body {
   display: flex;
   align-items: end;
   justify-content: end;
-  position: relative;
-  margin-top: 400px; /* temporar */
+  position: absolute;
+  right: 0;
+  bottom: 40px;
 }
 .title-pop {
   font-family: Inter;
@@ -201,7 +201,7 @@ body {
   gap: 1.3rem;
   border-radius: 50px 0 0 50px;
   background-color: #ffd88b;
-  padding: 3rem 12rem;
+  padding: 2rem 15rem;
   padding-right: 4rem;
 }
 .button-pop a {
@@ -232,9 +232,15 @@ body {
 .gif {
   display: flex;
   justify-content: center;
-  margin-right: 29vh;
+  margin-right: 350px;
 }
 .gif img {
   height: 120px;
   width: 90px;
+}
+.left img {
+  z-index: 10;
+}
+.part2 .right {
+  margin-bottom: 100px;
 }
