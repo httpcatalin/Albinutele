@@ -1,127 +1,107 @@
-body {
-  background-color: #ffcd6d;
+
+/* Inceputul Codului lui Viorel */
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
 }
-.main-page {
-  margin: 2rem 6rem;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eec47770;
-  border-radius: 20px;
-  padding: 15px 40px;
-  gap: 4rem;
-  overflow: hidden;
-}
-.link a img {
-  margin-left: 10px;
-}
-.link a {
-  font-family: Inter, sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: white;
-}
-.imag {
-  background-color: #eec47770;
-  border-radius: 20px;
-  padding: 15px;
-}
-.right {
-  background-color: #eec47770;
-  border-radius: 20px;
-  padding: 15px;
-}
-.menu {
-  display: none;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  height: 100vh;
-  width: 200px;
-  background-color: #eec477;
-  z-index: 1;
-}
-.inner-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  gap: 1.8rem;
-  margin: 0rem 3rem;
-}
-.link-menu a {
-  font-family: Inter, sans-serif;
-  font-size: 19px;
-  font-weight: 600;
-  color: white;
-}
-.visible {
-  display: block;
-}
-.close-sign a img {
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
   position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 30px;
-  height: 30px;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
-.menu-burger {
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
   list-style: none;
-  display: none;
-}
-.menu-burger.active li a {
-  font-size: 17px;
-  font-weight: 600;
-}
-.menu-burger.active {
-  margin-top: 10px;
-  display: flex;
-  position: absolute;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
   flex-direction: column;
-  background-color: #eec477;
-  padding: 20px 14px;
-  gap: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
 }
 
-/*Inceput codul lui cristi */
-.collection {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-.upperLine {
-  position: relative;
-  bottom: 10px;
-  left: 16px;
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
 }
 
-.ZaCollectionS {
-  position: relative;
-  top: 7px;
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
-
-.underLine {
-  position: relative;
-  top: 10px;
-  right: 16px;
-}
-
-.slider {
-  font-family: Inter, sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: white;
-}
-/* Sfarsit codul lui cristi */
+/* Sfirsitul Codului lui Viorel */
