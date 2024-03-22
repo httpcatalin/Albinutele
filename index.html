@@ -6,7 +6,9 @@
     <!-- linkuiri cu fileurile -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="big_slider.css" />
     <script defer src="script.js"></script>
+    <script defer src="big_slider.js"></script>
     <!-- font Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,8 +30,9 @@
   </head>
   <body>
     <!-- codul lui Cristi -->
-    <!-- SLIDER -->
-    <div class="slider">
+    <!-- COLLECTION -->
+  <div>
+     <div class="parent">
       <div class="collection">
         <div class="upperLine">
           <i class="fa-solid fa-window-minimize"></i>
@@ -40,32 +43,63 @@
           <i class="fa-solid fa-window-minimize"></i>
         </div>
       </div>
-      <div class="parent">
-        <div class="backgroundSL">
-       <div class="slider-wrapper">
-        
-        <div class="image-list">
-          <img src="/assets/albina_mare.svg" alt="albina_mare" class="image-item">
-          <img src="/assets/albina_mica.svg" alt="2" class="image-item">
-          <img src="/assets/albina_slider1-removebg-.png" alt="" class="image-item">
-          <img src="/assets/albina_slider2-removebg-.png" alt="" class="image-item">
-          <img src="/assets/albina_slider3-removebg-.png" alt="" class="image-item">
-          <img src="/assets/albina_slider4-removebg-.png" alt="" class="image-item">
+    </div>
+    <!-- BIG_SLIDER -->
+    <div class="big_slider">
+       <div class="big_slides">
+        <div class="each_slider">
+          <img src="/assets/albina_mare.svg" alt="" class="big_image">
+          <div class="card">
+            <h1 class="big_text_title">BUY A BIG YELLOW BEE DRONE</h1>
+            <p class="big_text_subtitle">FOR ROUGH AND TOUGH USE</p>
+            <p class="big_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big_button"><p class="big_btn_text">EXPLORE</p></button>
+          </div> 
         </div>
-        <div class="text-conteiner">
-          <p class="slider-text">Albina_mare.</p>
-          <p class="slider-text">Albina_mica.</p>
-          <p class="slider-text">Albina_sldier1.</p>
-          <p class="slider-text">Albina_sldier2</p>
-          <p class="slider-text">Albina_sldier3</p>
-          <p class="slider-text">Albina_sldier4</p>
+        <div class="each_slider">
+          <img src="/assets/albina_slider1-removebg-.png" alt="" class="big_image">
+          <div class="card">
+            <h1 class="big_text_title">BUY A SNIPER YELLOW BEE DRONE</h1>
+            <p class="big_text_subtitle">FOR ROUGH AND TOUGH USE</p>
+            <p class="big_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big_button"><p class="big_btn_text">EXPLORE</p></button>
+          </div> 
         </div>
-        <button  id="prev-slide" class="slide-button material-symbols-outlined">arrow_back</button>
-        <button  id="next-slide" class="slide-button material-symbols-outlined">arrow_forward</button>
+        <div class="each_slider">
+          <img src="/assets/albina_mica.svg" alt="" class="big_image">
+          <div class="card">
+            <h1 class="big_text_title">BUY A SMALL YELLOW BEE DRONE</h1>
+            <p class="big_text_subtitle">FOR ROUGH AND TOUGH USE</p>
+            <p class="big_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big_button"><p class="big_btn_text">EXPLORE</p></button>
+          </div> 
+        </div>
+        <div class="each_slider">
+          <img src="/assets/albina_slider2-removebg-.png" alt="" class="big_image">
+          <div class="card">
+            <h1 class="big_text_title">BUY A CAMPER YELLOW BEE DRONE</h1>
+            <p class="big_text_subtitle">FOR ROUGH AND TOUGH USE</p>
+            <p class="big_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big_button"><p class="big_btn_text">EXPLORE</p></button>
+          </div> 
+        </div>
+        <div class="each_slider">
+          <img src="/assets/albina_slider3-removebg-.png" alt="" class="big_image">
+          <div class="card">
+            <h1 class="big_text_title">BUY A SPY-PRO YELLOW BEE DRONE</h1>
+            <p class="big_text_subtitle">FOR ROUGH AND TOUGH USE</p>
+            <p class="big_text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big_button"><p class="big_btn_text">EXPLORE</p></button>
+          </div> 
+        </div>
        </div>
+      <div class="arrows">
+        <button class="prev_big" onclick="showPreviousSlide()">&#10094</button>
+        <button class="next_big" onclick="showNextSlide()">&#10095</button>
       </div>
       
-      </div>
     </div>
+  </div>
+    
   </body>
 </html>

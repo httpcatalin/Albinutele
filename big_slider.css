@@ -1,0 +1,123 @@
+/*Inceput codul lui cristi */
+.collection {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  .upperLine {
+    position: relative;
+    bottom: 25px;
+    left: 16px;
+  }
+  
+  .ZaCollectionS {
+    position: relative;
+    top: 7px;
+  }
+  
+  .underLine {
+    position: relative;
+    top: 20px;
+    right: 16px;
+  }
+  
+  .parent {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+  
+.big_slider{
+  padding-top: 50px;
+  position: relative;
+  display: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.big_slides{
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  background-color: #FFFFFF33;
+  border-radius: 60px 60px 60px 60px;
+  height: 600px;
+
+}
+
+.each_slider{
+  display: flex;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  width: 500px;
+}
+.big_text_title{
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.big_text_subtitle{
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  opacity: 70%;
+}
+.big_text_description{
+  padding-top: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 20px;
+}
+.big_button{
+  background: #FFFFFF33;
+  width: 192px;
+  height: 65px; 
+  border-color: white;
+  border-radius: 18px 18px 18px 18px;
+  
+}
+.big_btn_text{
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.big_image{
+  width: 762px;
+  height: 762px;
+  top: 2057px;
+  left: 25px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.big_slider .arrows button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  font-size: 2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  opacity: 70%;
+}
+
+.prev_big{
+  left: 0;
+}
+
+.next_big{
+  right: 0;
+}
